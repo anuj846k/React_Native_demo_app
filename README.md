@@ -1,50 +1,125 @@
-# Welcome to your Expo app 👋
+# Real Estate Mobile Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern and intuitive mobile application for real estate listings, built with React Native and Expo.
 
-## Get started
+## Overview
 
-1. Install dependencies
+This real estate application provides a seamless experience for users to browse, search, and explore property listings. With features like real-time search, property filtering, and detailed property information, users can easily find their ideal home.
 
-   ```bash
-   npm install
-   ```
+## Key Features
 
-2. Start the app
+- **Advanced Property Search**: Real-time search functionality with filters
+- **Property Categories**: Browse properties by type (Houses, Condos, Duplexes)
+- **User Authentication**: Secure Google OAuth integration
+- **Property Details**: Comprehensive property information including amenities
+- **Responsive Design**: Optimized for both iOS and Android platforms
+- **Favorites**: Save and track preferred properties
+- **User Profiles**: Personalized user experience with saved preferences
 
-   ```bash
-    npx expo start
-   ```
+## Screenshots
 
-In the output, you'll find options to open the app in a
+<div align="center">
+  <img src="./assets/images/LoginPage.jpeg" alt="Login Screen" width="200" style="margin: 10px"/>
+  <img src="./assets/images/Home.jpeg" alt="Home Screen" width="200" style="margin: 10px"/>
+  <img src="./assets/images/search.jpeg" alt="Search Screen" width="200" style="margin: 10px"/>
+  <img src="./assets/images/dashboard.jpeg" alt="Dashboard Screen" width="200" style="margin: 10px"/>
+</div>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Technical Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Frontend
 
-## Get a fresh project
+- React Native
+- Expo Router for navigation
+- NativeWind (TailwindCSS) for styling
+- TypeScript for type safety
 
-When you're ready, run:
+### Backend Services
+
+- Appwrite for authentication and database
+- Real-time data synchronization
+- Secure API integration
+
+### Development Tools
+
+- Expo CLI
+- TypeScript
+- ESLint & Prettier
+- Git for version control
+
+## Installation
+
+1. Clone the repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/anuj846k/React_Native_demo_app.git
+cd React_Native_demo_app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Configure environment variables
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+EXPO_PUBLIC_APPWRITE_ENDPOINT=your_endpoint
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_database_id
+```
 
-## Join the community
+4. Start the development server
 
-Join our community of developers creating universal apps.
+```bash
+npx expo start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Project Structure
+
+```
+├── app/                  # Main application code
+│   ├── (root)            # Root navigation
+│   │   ├── (tabs)        # Tab navigation
+│   │   └── (properties)       # Properties navigation
+│   │       
+├── assets/              # Static assets
+├── components/          # Reusable components
+├── constants/           # App constants
+├── lib/                 # Utilities and services
+```
+
+## Performance Features
+
+- Optimized image loading and caching
+- Efficient state management with Context API
+- Debounced search functionality
+- Lazy loading of components
+- Minimized re-renders using React hooks
+
+## Security Features
+
+- Secure OAuth2 authentication
+- Environment variable protection
+- API request encryption
+- Secure data storage
+
+## Development Practices
+
+- Clean and maintainable code architecture
+- Component-based development
+- TypeScript for enhanced development experience
+- Regular code reviews and testing
+
+## Contact
+
+For business inquiries and collaboration:
+
+- Email: anuj846k@gmail.com
+- LinkedIn: https://www.linkedin.com/in/anuj-kumar-6aa13b264/
+- Portfolio: https://www.anuj846k.tech/about
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
